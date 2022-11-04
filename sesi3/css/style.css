@@ -1,0 +1,67 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#bio-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#bio-layout {
+    margin: 20px 40px 20px 40px;
+}
+
+#form-layout {
+    margin: 20px 40px 20px 40px;
+}
+
+#form-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+
+}
+
+.form-control {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}

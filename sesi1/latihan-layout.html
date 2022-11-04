@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .relative {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: #f1f1f1;
+            border: 3px solid #73AD21;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            background-color: white;
+            border: 3px solid #73AD21;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 120px;
+            right: 0;
+            width: 300px;
+            height: 200px;
+            border: 3px solid #73AD;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Block -->
     <div>
         asdasdasd<div>Ini Div </div>
     </div>
     <!-- Inline -->
-    
+
+    <div class="relative">
+        This element is relatively-positioned. If this element was position: static; its absolutely-positioned child
+        would escape and would be positioned relative to the document body
+        <div class="fixed">
+            Hello! Don't pay attention to me yet.
+        </div>
+    </div>
+
+    <div class="relative">
+        This element is relatively-positioned. If this element was position: static; its absolutely-positioned child
+        would escape and would be positioned relative to the document body
+        <div class="absolute">
+            This element is absolutely-positioned. It's positioned relative to its parent.
+        </div>
+    </div>
 </body>
+
 </html>
